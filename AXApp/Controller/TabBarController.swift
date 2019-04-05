@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TabBarController.swift
 //  AXApp
 //
 //  Created by Rovane Moura on 05/04/19.
@@ -8,13 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TabBarController: UITabBarController {
+    
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
+        tabBar.tintColor = .white
+        tabBar.barTintColor = .red
+
+    }
+    
+
+    
 
 }
-
