@@ -12,6 +12,7 @@ class TableViewCell: UITableViewCell {
     
     @IBOutlet weak var infoImage: UIImageView!
     @IBOutlet weak var favoriteButton: UIButton!
+    @IBOutlet weak var colorTagView: UIView!
     
     var infoModel : InfoModel!
 

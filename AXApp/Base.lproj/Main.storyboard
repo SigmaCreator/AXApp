@@ -143,6 +143,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="colorTagView" destination="myt-d6-6Qm" id="qWd-Kq-9Yo"/>
                                             <outlet property="favoriteButton" destination="zEm-YB-VB3" id="CDZ-YC-NbL"/>
                                             <outlet property="infoImage" destination="ErY-Br-f9h" id="LrI-RE-h12"/>
                                         </connections>

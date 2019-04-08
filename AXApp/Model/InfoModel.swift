@@ -6,12 +6,14 @@
 //  Copyright © 2019 Rovane Moura. All rights reserved.
 //
 
-import Foundation
-
-enum Category {
+enum Category : Int {
     
-    case presentation
-    case guest
+    case presentation = 0
+    case guest = 1
+    case activity = 2
+    case club = 3
+    case exposition = 4
+    case contest = 5
 
 }
 

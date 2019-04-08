@@ -12,12 +12,81 @@ class ViewController : UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var infos = [InfoModel]()
+    var categoryColor = [Int : UIColor]()
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
+        // Set table view properties
         tableView.dataSource = self
         tableView.separatorStyle = .none
-
+        
+        // Set category color
+        categoryColor[Category.presentation.rawValue] = .red
+        categoryColor[Category.guest.rawValue] = .blue
+        categoryColor[Category.activity.rawValue] = .green
+        categoryColor[Category.club.rawValue] = .orange
+        categoryColor[Category.exposition.rawValue] = .yellow
+        categoryColor[Category.contest.rawValue] = .purple
+        
+        // Set data
+        let one = InfoModel(title: "Inscrições",
+                            time: "10:00",
+                            location: "Sala 01",
+                            imageName: "sailor",
+                            category: .contest,
+                            isFavorite: false,
+                            shortDescription: "Concurso Cosplay",
+                            detail: "",
+                            fullDescription: "full",
+                            about: "about")
+        
+        let two = InfoModel(title: "Estandes",
+                            time: "10:00",
+                            location: "Área de Estandes",
+                            imageName: "sailor",
+                            category: .guest,
+                            isFavorite: false,
+                            shortDescription: "Artigos temáticos à venda",
+                            detail: "",
+                            fullDescription: "full",
+                            about: "about")
+        
+        let three = InfoModel(title: "De Volta Para o Futuro",
+                              time: "10:00",
+                              location: "Sala 02",
+                              imageName: "sailor",
+                              category: .exposition,
+                              isFavorite: false,
+                              shortDescription: "Exposição",
+                              detail: "",
+                              fullDescription: "full",
+                              about: "about")
+        
+        let four = InfoModel(title: "Harry Potter",
+                             time: "10:00",
+                             location: "Sala 05",
+                             imageName: "sailor",
+                             category: .club,
+                             isFavorite: false,
+                             shortDescription: "Sala temática",
+                             detail: "",
+                             fullDescription: "full",
+                             about: "about")
+        
+        infos.append(one)
+        infos.append(two)
+        infos.append(three)
+        infos.append(four)
+        
+        // Show AX logo
+        let logo = UIImage(named: "logo.png")
+        let imageView = UIImageView(image:logo)
+        let scale : CGFloat = 1
+        imageView.frame = CGRect(x: imageView.frame.minX, y: imageView.frame.minY, width: imageView.frame.width * scale, height: imageView.frame.height * scale)
+        navigationItem.titleView = imageView
         
     }
 
@@ -32,15 +101,17 @@ class ViewController : UIViewController {
 
 extension ViewController : UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
-    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { return infos.count }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "info") as? TableViewCell {
 
             cell.selectionStyle = .none
+            
+            let category = infos[indexPath.row].category.rawValue
+            
+            cell.colorTagView.backgroundColor = categoryColor[category]
             
             return cell
             
