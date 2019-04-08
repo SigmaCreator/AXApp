@@ -73,7 +73,7 @@ class ViewController : UIViewController {
                              category: .club,
                              isFavorite: false,
                              shortDescription: "Sala temática",
-                             detail: "",
+                             detail: "udhsaiud hasiudhasdiuahsdiu hauisd hasiu ahsdiu ahs uiashdaiusd a",
                              fullDescription: "full",
                              about: "about")
         
@@ -116,11 +116,15 @@ extension ViewController : UITableViewDataSource {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "info") as? TableViewCell {
 
+            cell.infoModel = infos[indexPath.row]
+            
             cell.selectionStyle = .none
             
-            let category = infos[indexPath.row].category.rawValue
+            let category = cell.infoModel.category.rawValue
             
             cell.colorTagView.backgroundColor = categoryColor[category]
+            
+            
             
             return cell
             
