@@ -25,12 +25,12 @@ class ViewController : UIViewController {
         tableView.separatorStyle = .none
         
         // Set category color
-        categoryColor[Category.presentation.rawValue] = .red
-        categoryColor[Category.guest.rawValue] = .blue
-        categoryColor[Category.activity.rawValue] = .green
-        categoryColor[Category.club.rawValue] = .orange
-        categoryColor[Category.exposition.rawValue] = .yellow
-        categoryColor[Category.contest.rawValue] = .purple
+        categoryColor[Category.presentation.rawValue] = UIColor(red: 1, green: 0.1804, blue: 0.3333, alpha: 1.0) /* #ff2e55 */
+        categoryColor[Category.guest.rawValue] = UIColor(red: 0.6235, green: 0.7686, blue: 0.9255, alpha: 1.0) /* #9fc4ec */
+        categoryColor[Category.activity.rawValue] = UIColor(red: 0.7098, green: 0.8824, blue: 0.7412, alpha: 1.0) /* #b5e1bd */
+        categoryColor[Category.club.rawValue] = UIColor(red: 0.9255, green: 0.8, blue: 0.6235, alpha: 1.0) /* #eccc9f */
+        categoryColor[Category.exposition.rawValue] = UIColor(red: 0.9255, green: 0.8667, blue: 0.6235, alpha: 1.0) /* #ecdd9f */
+        categoryColor[Category.contest.rawValue] = UIColor(red: 0.7255, green: 0.7255, blue: 0.8784, alpha: 1.0) /* #b9b9e0 */
         
         // Set data
         let one = InfoModel(title: "Inscrições",
@@ -47,7 +47,7 @@ class ViewController : UIViewController {
         let two = InfoModel(title: "Estandes",
                             time: "11:00",
                             location: "Área de Estandes",
-                            imageName: "sailor",
+                            imageName: "Estandes",
                             category: .guest,
                             isFavorite: false,
                             shortDescription: "Artigos temáticos à venda",
@@ -58,7 +58,7 @@ class ViewController : UIViewController {
         let three = InfoModel(title: "De Volta Para o Futuro",
                               time: "12:30",
                               location: "Sala 02",
-                              imageName: "sailor",
+                              imageName: "deVoltaPara",
                               category: .exposition,
                               isFavorite: false,
                               shortDescription: "Exposição",
@@ -69,7 +69,7 @@ class ViewController : UIViewController {
         let four = InfoModel(title: "Harry Potter",
                              time: "12:50",
                              location: "Sala 05",
-                             imageName: "sailor",
+                             imageName: "harry",
                              category: .club,
                              isFavorite: false,
                              shortDescription: "Sala temática",
@@ -80,7 +80,7 @@ class ViewController : UIViewController {
         let five = InfoModel(title: "Ragnarok",
                              time: "14:00",
                              location: "Sala 07",
-                             imageName: "sailor",
+                             imageName: "ragnarok",
                              category: .club,
                              isFavorite: false,
                              shortDescription: "Sala temática",
@@ -91,7 +91,7 @@ class ViewController : UIViewController {
         let six = InfoModel(title: "Isaac Bardavid",
                              time: "14:20",
                              location: "Palco principal",
-                             imageName: "sailor",
+                             imageName: "Isaac",
                              category: .guest,
                              isFavorite: false,
                              shortDescription: "Dublador do Wolverine",
@@ -102,7 +102,7 @@ class ViewController : UIViewController {
         let seven = InfoModel(title: "Rolandinho e Bock",
                              time: "15:00",
                              location: "Palco Web",
-                             imageName: "sailor",
+                             imageName: "rolandinho",
                              category: .guest,
                              isFavorite: false,
                              shortDescription: "Pipocando",
@@ -113,7 +113,7 @@ class ViewController : UIViewController {
         let eight = InfoModel(title: "Campeonato de Guitar Hero",
                               time: "15:10",
                               location: "Arena Games",
-                              imageName: "sailor",
+                              imageName: "guitarHero",
                               category: .contest,
                               isFavorite: false,
                               shortDescription: "Pipocando",
@@ -124,7 +124,7 @@ class ViewController : UIViewController {
         let nine = InfoModel(title: "Cid",
                               time: "15:10",
                               location: "Palco Web",
-                              imageName: "sailor",
+                              imageName: "cidNormal",
                               category: .guest,
                               isFavorite: false,
                               shortDescription: "Não Salvo",
@@ -135,7 +135,7 @@ class ViewController : UIViewController {
         let ten = InfoModel(title: "Sessão de fotos",
                              time: "16:40",
                              location: "Palco Web",
-                             imageName: "sailor",
+                             imageName: "cidNormal",
                              category: .activity,
                              isFavorite: false,
                              shortDescription: "Não Salvo",
@@ -167,7 +167,13 @@ class ViewController : UIViewController {
     @IBAction func addFavorite(_ sender: UIButton) {
         
         let favoriteImage = UIImage(named: "filledHeart")
-        sender.setImage(favoriteImage, for: .normal)
+        
+        if favoriteImage != sender.currentImage{
+            sender.setImage(favoriteImage, for: .normal)
+        }else{
+            let favoriteEmpty = UIImage(named: "emptyHeart")
+            sender.setImage(favoriteEmpty, for: .normal)
+        }
         
     }
     
