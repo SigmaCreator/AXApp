@@ -118,13 +118,13 @@ extension ViewController : UITableViewDataSource {
 
             cell.infoModel = infos[indexPath.row]
             
+            cell.favoriteButton.transform = CGAffineTransform.identity.scaledBy(x: 2, y: 2)
+            
             cell.selectionStyle = .none
             
             let category = cell.infoModel.category.rawValue
             
             cell.colorTagView.backgroundColor = categoryColor[category]
-            
-            
             
             return cell
             
