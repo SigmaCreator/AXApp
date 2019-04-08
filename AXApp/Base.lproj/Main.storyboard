@@ -69,10 +69,13 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myt-d6-6Qm">
                                                             <rect key="frame" x="0.0" y="0.0" width="65" height="105"/>
                                                             <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEm-YB-VB3">
-                                                                    <rect key="frame" x="21" y="22" width="22" height="22"/>
+                                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEm-YB-VB3">
+                                                                    <rect key="frame" x="21" y="19" width="22" height="22"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <state key="normal" image="emptyHeart"/>
+                                                                    <connections>
+                                                                        <action selector="addFavorite:" destination="XPU-Zi-aFk" eventType="touchUpInside" id="N0A-wv-b5F"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                             <color key="backgroundColor" red="0.69900688450000004" green="0.50990255750000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -105,6 +108,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="favoriteButton" destination="zEm-YB-VB3" id="CDZ-YC-NbL"/>
                                             <outlet property="infoImage" destination="ErY-Br-f9h" id="LrI-RE-h12"/>
                                         </connections>
                                     </tableViewCell>

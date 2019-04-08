@@ -17,10 +17,17 @@ class ViewController : UIViewController {
         
         tableView.dataSource = self
         tableView.separatorStyle = .none
+
         
     }
 
-
+    @IBAction func addFavorite(_ sender: UIButton) {
+        
+        let favoriteImage = UIImage(named: "filledHeart")
+        sender.setImage(favoriteImage, for: .normal)
+        
+    }
+    
 }
 
 extension ViewController : UITableViewDataSource {
@@ -31,9 +38,10 @@ extension ViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "info") {
-            
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "info") as? TableViewCell {
+
             cell.selectionStyle = .none
+            
             return cell
             
         }
