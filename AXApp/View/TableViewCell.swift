@@ -11,7 +11,8 @@ import UIKit
 class TableViewCell: UITableViewCell {
     
     @IBOutlet weak var infoImage: UIImageView!
-        
+    @IBOutlet weak var favoriteButton: UIButton!
+    
     var infoModel : InfoModel!
 
 }
