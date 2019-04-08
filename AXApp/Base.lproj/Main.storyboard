@@ -13,7 +13,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="geK-Sw-fX1">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Afq-Jy-5Ib" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="xrF-b0-Q3K" customClass="TabBarController" customModule="AXApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WeB-Vx-4yZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -24,13 +23,13 @@
                         <segue destination="0p0-bc-O35" kind="relationship" relationship="viewControllers" id="KAt-Eh-kSo"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Afq-Jy-5Ib" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-16" y="27"/>
         </scene>
         <!--Mapa-->
         <scene sceneID="6rs-3R-SAZ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="y14-UU-xKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="0p0-bc-O35" customClass="NavigationController" customModule="AXApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Mapa" id="dBx-L5-DRD"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="NRE-og-Bja">
@@ -41,6 +40,7 @@
                         <segue destination="XPU-Zi-aFk" kind="relationship" relationship="rootViewController" id="xme-D6-ju8"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y14-UU-xKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="846" y="27"/>
         </scene>
@@ -68,6 +68,13 @@
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myt-d6-6Qm">
                                                             <rect key="frame" x="0.0" y="0.0" width="65" height="105"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEm-YB-VB3">
+                                                                    <rect key="frame" x="21" y="22" width="22" height="22"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <state key="normal" image="emptyHeart"/>
+                                                                </button>
+                                                            </subviews>
                                                             <color key="backgroundColor" red="0.69900688450000004" green="0.50990255750000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="65" id="mhR-qo-hcR"/>
@@ -89,7 +96,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="xwL-53-SUS" firstAttribute="top" secondItem="A4j-1M-mRu" secondAttribute="top" constant="7" id="EQQ-wJ-X01"/>
                                                 <constraint firstItem="xwL-53-SUS" firstAttribute="leading" secondItem="A4j-1M-mRu" secondAttribute="leading" id="Iqb-KZ-vWY"/>
@@ -135,6 +142,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="emptyHeart" width="21.5" height="19.5"/>
         <image name="sailor" width="95" height="105"/>
     </resources>
 </document>

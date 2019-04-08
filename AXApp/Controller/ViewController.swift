@@ -16,6 +16,7 @@ class ViewController : UIViewController {
         super.viewDidLoad()
         
         tableView.dataSource = self
+        tableView.separatorStyle = .none
         
     }
 
@@ -32,6 +33,7 @@ extension ViewController : UITableViewDataSource {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "info") {
             
+            cell.selectionStyle = .none
             return cell
             
         }
@@ -39,8 +41,6 @@ extension ViewController : UITableViewDataSource {
         return UITableViewCell()
         
     }
-    
-    
 }
 
 
