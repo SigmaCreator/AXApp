@@ -21,6 +21,7 @@ class ViewController : UIViewController {
         
         // Set table view properties
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.separatorStyle = .none
         
         // Set category color
@@ -97,6 +98,14 @@ class ViewController : UIViewController {
         
     }
     
+    // MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToDetail", let detailVC = segue.destination as? DetailViewController, let selectedInfo = sender as? InfoModel {
+            
+            detailVC.info = selectedInfo
+        }
+    }
+    
 }
 
 extension ViewController : UITableViewDataSource {
@@ -119,6 +128,16 @@ extension ViewController : UITableViewDataSource {
         
         return UITableViewCell()
         
+    }
+}
+
+// MARK: Table View Delegate
+extension ViewController : UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let info = infos[indexPath.row]
+        
+        self.performSegue(withIdentifier: "goToDetail", sender: info)
     }
 }
 

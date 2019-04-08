@@ -13,7 +13,20 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var infoImage: UIImageView!
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var colorTagView: UIView!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var shortDescription: UILabel!
+    @IBOutlet weak var detail: UILabel!
+    @IBOutlet weak var time: UILabel!
+    @IBOutlet weak var location: UILabel!
     
-    var infoModel : InfoModel!
-
+    var infoModel : InfoModel! {
+        didSet{
+            self.title.text = infoModel.title
+            self.shortDescription.text = infoModel.shortDescription
+            self.detail.text = infoModel.detail
+            self.time.text = infoModel.time
+            self.location.text = infoModel.location
+        }
+    }
+    
 }
