@@ -41,46 +41,119 @@ class ViewController : UIViewController {
                             isFavorite: false,
                             shortDescription: "Concurso Cosplay",
                             detail: "",
-                            fullDescription: "full",
-                            about: "about")
+                            fullDescription: "Concurso de Cosplay de todas as categorias",
+                            about: "Incrições a partir das 08:00")
         
         let two = InfoModel(title: "Estandes",
-                            time: "10:00",
+                            time: "11:00",
                             location: "Área de Estandes",
                             imageName: "sailor",
                             category: .guest,
                             isFavorite: false,
                             shortDescription: "Artigos temáticos à venda",
                             detail: "",
-                            fullDescription: "full",
-                            about: "about")
+                            fullDescription: "Estandes com Artigos temáticos de diversos tipos à venda!",
+                            about: "Venha Conferir")
         
         let three = InfoModel(title: "De Volta Para o Futuro",
-                              time: "10:00",
+                              time: "12:30",
                               location: "Sala 02",
                               imageName: "sailor",
                               category: .exposition,
                               isFavorite: false,
                               shortDescription: "Exposição",
                               detail: "",
-                              fullDescription: "full",
-                              about: "about")
+                              fullDescription: "Exposição do filme De Volta Para o Futuro",
+                              about: "Venha Conferir")
         
         let four = InfoModel(title: "Harry Potter",
-                             time: "10:00",
+                             time: "12:50",
                              location: "Sala 05",
                              imageName: "sailor",
                              category: .club,
                              isFavorite: false,
                              shortDescription: "Sala temática",
-                             detail: "udhsaiud hasiudhasdiuahsdiu hauisd hasiu ahsdiu ahs uiashdaiusd a",
-                             fullDescription: "full",
-                             about: "about")
+                             detail: "",
+                             fullDescription: "Sala temática de Harry Potter",
+                             about: "Venha conferir")
+        
+        let five = InfoModel(title: "Ragnarok",
+                             time: "14:00",
+                             location: "Sala 07",
+                             imageName: "sailor",
+                             category: .club,
+                             isFavorite: false,
+                             shortDescription: "Sala temática",
+                             detail: "",
+                             fullDescription: "Sala temática do jogo Ragnarok",
+                             about: "Venha conferir")
+        
+        let six = InfoModel(title: "Isaac Bardavid",
+                             time: "14:20",
+                             location: "Palco principal",
+                             imageName: "sailor",
+                             category: .guest,
+                             isFavorite: false,
+                             shortDescription: "Dublador do Wolverine",
+                             detail: "A vida de um dublador no Brasil",
+                             fullDescription: "Isaac Bardavid é um ator, dublador e poeta brasileiro. Como dublador, é conhecido pelas vozes do Wolverine, o Esqueleto de He-Man, Tigrão, o amigo do Ursinho Pooh, Robotnik de Sonic The Hedgehog SatAM e o computador K.I.T.T. do seriado A Super Máquina.",
+                             about: "Isaac vai nos contar sobre sua vida como dublador no Brasil, lembrando dos melhores momentos e das maiores dificuldades. Também vamos ouvir sobre como foi dublar Wolverine pro tantos anos! Duração: 1h")
+        
+        let seven = InfoModel(title: "Rolandinho e Bock",
+                             time: "15:00",
+                             location: "Palco Web",
+                             imageName: "sailor",
+                             category: .guest,
+                             isFavorite: false,
+                             shortDescription: "Pipocando",
+                             detail: "Como chegamos até aqui",
+                             fullDescription: "Conversa com Rolandinho e Bock: Como chegamos até aqui!",
+                             about: "Venha conferir")
+        
+        let eight = InfoModel(title: "Campeonato de Guitar Hero",
+                              time: "15:10",
+                              location: "Arena Games",
+                              imageName: "sailor",
+                              category: .contest,
+                              isFavorite: false,
+                              shortDescription: "Pipocando",
+                              detail: "Inscrições 30min antes",
+                              fullDescription: "Inscrições 30min antes",
+                              about: "Venha conferir")
+        
+        let nine = InfoModel(title: "Cid",
+                              time: "15:10",
+                              location: "Palco Web",
+                              imageName: "sailor",
+                              category: .guest,
+                              isFavorite: false,
+                              shortDescription: "Não Salvo",
+                              detail: "O humor na internet",
+                              fullDescription: "Conversa com Cid do Não Salvo, O humor na internet!",
+                              about: "Venha conferir")
+        
+        let ten = InfoModel(title: "Sessão de fotos",
+                             time: "16:40",
+                             location: "Palco Web",
+                             imageName: "sailor",
+                             category: .activity,
+                             isFavorite: false,
+                             shortDescription: "Não Salvo",
+                             detail: "O humor na internet",
+                             fullDescription: "Sessāo de fotos com Cid do Não Salvo.",
+                             about: "Venha conferir")
         
         infos.append(one)
         infos.append(two)
         infos.append(three)
         infos.append(four)
+        infos.append(five)
+        infos.append(six)
+        infos.append(seven)
+        infos.append(eight)
+        infos.append(nine)
+        infos.append(ten)
+        
         
         // Show AX logo
         let logo = UIImage(named: "logo.png")
