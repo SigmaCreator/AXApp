@@ -53,7 +53,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hyd-Av-ppU">
-                                <rect key="frame" x="0.0" y="283" width="414" height="530"/>
+                                <rect key="frame" x="0.0" y="355" width="414" height="458"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="info" rowHeight="119" id="2YN-5H-CYx" customClass="TableViewCell" customModule="AXApp" customModuleProvider="target">
@@ -190,10 +190,19 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1et-ZF-6MC">
-                                <rect key="frame" x="0.0" y="155" width="414" height="128"/>
+                                <rect key="frame" x="0.0" y="155" width="414" height="200"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naoImplementado" translatesAutoresizingMaskIntoConstraints="NO" id="TwU-1c-1Te">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="TST-hs-FfP"/>
+                                    <constraint firstAttribute="height" constant="200" id="TST-hs-FfP"/>
+                                    <constraint firstAttribute="trailing" secondItem="TwU-1c-1Te" secondAttribute="trailing" id="ovE-Nu-4Cu"/>
+                                    <constraint firstAttribute="bottom" secondItem="TwU-1c-1Te" secondAttribute="bottom" id="q7x-OS-k7G"/>
+                                    <constraint firstItem="TwU-1c-1Te" firstAttribute="top" secondItem="1et-ZF-6MC" secondAttribute="top" id="qFR-Vk-h2z"/>
+                                    <constraint firstItem="TwU-1c-1Te" firstAttribute="leading" secondItem="1et-ZF-6MC" secondAttribute="leading" id="tf1-9u-rbk"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -208,7 +217,6 @@
                             <constraint firstItem="Hyd-Av-ppU" firstAttribute="bottom" secondItem="YfE-xq-gYH" secondAttribute="bottom" id="U3c-ph-zrJ"/>
                             <constraint firstItem="Hyd-Av-ppU" firstAttribute="top" secondItem="1et-ZF-6MC" secondAttribute="bottom" id="Vun-Le-Awa"/>
                             <constraint firstItem="brt-YO-ptv" firstAttribute="top" secondItem="GOJ-pO-kaY" secondAttribute="top" id="Z1Y-2G-ccK"/>
-                            <constraint firstItem="1et-ZF-6MC" firstAttribute="top" secondItem="brt-YO-ptv" secondAttribute="bottom" id="a9M-91-hUP"/>
                             <constraint firstItem="Hyd-Av-ppU" firstAttribute="top" secondItem="1et-ZF-6MC" secondAttribute="bottom" id="gqS-E0-cSR"/>
                             <constraint firstItem="brt-YO-ptv" firstAttribute="leading" secondItem="YfE-xq-gYH" secondAttribute="leading" id="p1D-96-iij"/>
                         </constraints>
@@ -318,6 +326,7 @@
     </scenes>
     <resources>
         <image name="emptyHeart" width="11" height="10"/>
+        <image name="naoImplementado" width="187.5" height="100.5"/>
         <image name="sailor" width="95" height="105"/>
     </resources>
 </document>
