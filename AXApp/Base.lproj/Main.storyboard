@@ -58,7 +58,13 @@
                     <view key="view" contentMode="scaleToFill" id="Dml-xD-Ftr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapIcon" translatesAutoresizingMaskIntoConstraints="NO" id="kff-YH-mge">
+                                <rect key="frame" x="136" y="408" width="142" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="jRf-bq-3fH"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="mapIcon" id="OdJ-2b-aCP">
@@ -67,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDP-J9-OZv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-17" y="739"/>
+            <point key="canvasLocation" x="-17.39130434782609" y="738.61607142857144"/>
         </scene>
         <!--Home-->
         <scene sceneID="PoE-St-2ob">
@@ -415,7 +421,13 @@
                     <view key="view" contentMode="scaleToFill" id="VyD-1R-WNt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="bc0-aw-Lhu">
+                                <rect key="frame" x="136" y="408" width="142" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="UL8-WC-PGD"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="newsIcon" id="91S-pA-yKQ">
@@ -433,7 +445,13 @@
                     <view key="view" contentMode="scaleToFill" id="l2Z-sI-rGu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heartIcon" translatesAutoresizingMaskIntoConstraints="NO" id="zYj-2Z-cIT">
+                                <rect key="frame" x="136" y="408" width="142" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="MN5-lm-hQr"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="heartIcon" id="Xn4-l1-vsg">
@@ -451,7 +469,13 @@
                     <view key="view" contentMode="scaleToFill" id="x4W-nt-h4n">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="I5h-5t-Zqe">
+                                <rect key="frame" x="136" y="408" width="142" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="c4A-eu-0Ls"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="profileIcon" id="KFv-0T-lzd">
