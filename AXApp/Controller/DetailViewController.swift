@@ -19,8 +19,15 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var time: UILabel!
     @IBOutlet weak var location: UILabel!
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = false
+        
+    }
     
     override func viewDidLoad() {
+    
         super.viewDidLoad()
 
         self.detailTitle.text = info?.title
@@ -29,6 +36,7 @@ class DetailViewController: UIViewController {
         self.about.text = info?.about
         self.time.text = info?.time
         self.location.text = info?.location
+        
     }
     
 
