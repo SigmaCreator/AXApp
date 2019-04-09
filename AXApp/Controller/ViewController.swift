@@ -11,9 +11,17 @@ import UIKit
 class ViewController : UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var logoView: UIImageView!
     
     var infos = [InfoModel]()
     var categoryColor = [Int : UIColor]()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = true
+        
+    }
     
     override func viewDidLoad() {
         
@@ -156,11 +164,8 @@ class ViewController : UIViewController {
         
         
         // Show AX logo
-        let logo = UIImage(named: "logo.png")
-        let imageView = UIImageView(image:logo)
-        let scale : CGFloat = 1
-        imageView.frame = CGRect(x: imageView.frame.minX, y: imageView.frame.minY, width: imageView.frame.width * scale, height: imageView.frame.height * scale)
-        navigationItem.titleView = imageView
+        let logo = UIImage(named: "logo")
+        logoView.image = logo
         
     }
 
@@ -169,19 +174,25 @@ class ViewController : UIViewController {
         let favoriteImage = UIImage(named: "filledHeart")
         
         if favoriteImage != sender.currentImage{
+            
             sender.setImage(favoriteImage, for: .normal)
-        }else{
+            
+        } else {
+            
             let favoriteEmpty = UIImage(named: "emptyHeart")
             sender.setImage(favoriteEmpty, for: .normal)
+            
         }
         
     }
     
     // MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         if segue.identifier == "goToDetail", let detailVC = segue.destination as? DetailViewController, let selectedInfo = sender as? InfoModel {
             
             detailVC.info = selectedInfo
+            
         }
     }
     
