@@ -27,6 +27,17 @@ class TableViewCell: UITableViewCell {
             self.time.text = infoModel.time
             self.location.text = infoModel.location
             self.infoImage.image = UIImage(named: infoModel.imageName)
+            
+//            if infoModel.isFavorite {
+//                
+//                self.favoriteButton.setImage(UIImage(named: "filledHeart"), for: .normal)
+//                
+//            } else {
+//                
+//                self.favoriteButton.setImage(UIImage(named: "emptyHeart"), for: .normal)
+//                
+//            }
+        
         }
     }
     

@@ -11,15 +11,36 @@ import UIKit
 class ViewController : UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var logoView: UIImageView!
+    @IBOutlet weak var headerLogoView: UIImageView!
+    @IBOutlet weak var launchScreenBGImageView: UIImageView!
+    @IBOutlet weak var launchScreenLogoImageView: UIImageView!
     
     var infos = [InfoModel]()
     var categoryColor = [Int : UIColor]()
+    var firstTime = true
     
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
+        
+        if firstTime { tabBarController?.tabBar.isHidden = true }
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if firstTime {
+            
+            sleep(3)
+        
+            tabBarController?.tabBar.isHidden = false
+            launchScreenBGImageView.removeFromSuperview()
+            launchScreenLogoImageView.removeFromSuperview()
+            
+            firstTime = false
+            
+        }
         
     }
     
@@ -165,7 +186,7 @@ class ViewController : UIViewController {
         
         // Show AX logo
         let logo = UIImage(named: "logo")
-        logoView.image = logo
+        headerLogoView.image = logo
         
     }
 
@@ -177,10 +198,23 @@ class ViewController : UIViewController {
             
             sender.setImage(favoriteImage, for: .normal)
             
+//            // Button.ColorTag.View.ContentView.Info
+//            if let cell = sender.superview?.superview?.superview?.superview as? TableViewCell {
+//
+//                cell.infoModel.isFavorite = true
+//
+//            }
+            
         } else {
             
             let favoriteEmpty = UIImage(named: "emptyHeart")
             sender.setImage(favoriteEmpty, for: .normal)
+            
+//            if let cell = sender.superview?.superview?.superview?.superview as? TableViewCell {
+//
+//                cell.infoModel.isFavorite = false
+//
+//            }
             
         }
         
@@ -209,6 +243,13 @@ extension ViewController : UITableViewDataSource {
             cell.infoModel = infos[indexPath.row]
             
             cell.favoriteButton.transform = CGAffineTransform.identity.scaledBy(x: 2, y: 2)
+            
+//            if cell.infoModel.isFavorite {
+//                
+//                print("here")
+//                cell.favoriteButton.setImage(UIImage(named: "filledHeart"), for: .normal)
+//                
+//            }
             
             cell.selectionStyle = .none
             

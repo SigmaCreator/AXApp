@@ -242,6 +242,14 @@
                                     <constraint firstItem="TwU-1c-1Te" firstAttribute="leading" secondItem="1et-ZF-6MC" secondAttribute="leading" id="tf1-9u-rbk"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launchScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="o2W-hE-Uqz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="EFT-jI-LWZ">
+                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -261,7 +269,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="Iym-nc-QUs"/>
                     <connections>
-                        <outlet property="logoView" destination="gkT-hq-Tl7" id="Tlo-0O-8B1"/>
+                        <outlet property="headerLogoView" destination="gkT-hq-Tl7" id="Tlo-0O-8B1"/>
+                        <outlet property="launchScreenBGImageView" destination="o2W-hE-Uqz" id="cWN-bE-8oI"/>
+                        <outlet property="launchScreenLogoImageView" destination="EFT-jI-LWZ" id="WbJ-Em-6cw"/>
                         <outlet property="tableView" destination="Hyd-Av-ppU" id="ibX-Ij-bph"/>
                         <segue destination="Zyf-Vx-9sE" kind="show" identifier="goToDetail" id="yxT-XS-Qyz"/>
                     </connections>
@@ -281,8 +291,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gnw-DP-HOD">
                                 <rect key="frame" x="0.0" y="161.5" width="414" height="296"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="isaacBig" translatesAutoresizingMaskIntoConstraints="NO" id="60k-dS-CJT">
-                                        <rect key="frame" x="69" y="0.0" width="127" height="296"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sailorBig" translatesAutoresizingMaskIntoConstraints="NO" id="60k-dS-CJT">
+                                        <rect key="frame" x="45" y="0.0" width="163" height="296"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="127" id="gRO-Uv-MvM"/>
                                         </constraints>
@@ -491,11 +501,13 @@
         <image name="emptyHeart" width="11" height="10"/>
         <image name="heartIcon" width="24" height="22"/>
         <image name="homeIcon" width="29" height="24"/>
-        <image name="isaacBig" width="156" height="260"/>
+        <image name="launchScreenBG" width="125" height="270.66665649414062"/>
+        <image name="logo" width="454" height="178.5"/>
         <image name="mapIcon" width="25" height="25"/>
         <image name="naoImplementado" width="187.5" height="100.5"/>
         <image name="newsIcon" width="24.5" height="24.5"/>
         <image name="profileIcon" width="22" height="24"/>
         <image name="sailor" width="95" height="105"/>
+        <image name="sailorBig" width="52" height="86.666664123535156"/>
     </resources>
 </document>
