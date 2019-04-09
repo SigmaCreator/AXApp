@@ -124,7 +124,7 @@ class ViewController : UIViewController {
                               imageName: "guitarHero",
                               category: .contest,
                               isFavorite: false,
-                              shortDescription: "Pipocando",
+                              shortDescription: "",
                               detail: "Inscrições 30min antes",
                               fullDescription: "Inscrições 30min antes",
                               about: "Venha conferir")

@@ -23,10 +23,6 @@ class TableViewCell: UITableViewCell {
         didSet{
             self.title.text = infoModel.title
             self.shortDescription.text = infoModel.shortDescription
-            if infoModel.detail.count > 15 {
-                self.detail.lineBreakMode = .byWordWrapping
-                self.detail.numberOfLines = 2
-            }
             self.detail.text = infoModel.detail
             self.time.text = infoModel.time
             self.location.text = infoModel.location
