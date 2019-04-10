@@ -71,7 +71,7 @@ class ViewController : UIViewController {
                             shortDescription: "Concurso Cosplay",
                             detail: "",
                             fullDescription: "Concurso de Cosplay de todas as categorias",
-                            about: "Incrições a partir das 08:00")
+                            about: "1. Idade mínima para inscrição: 13 (treze) anos de idade. \n 2. A inscrição é gratuita. \n 3. A inscrição é individual. \n 4. Todos os inscritos no Concurso de Melhor Cosplay deverão se apresentar no dia no horário do evento.")
         
         let two = InfoModel(title: "Estandes",
                             time: "11:00",
@@ -82,7 +82,7 @@ class ViewController : UIViewController {
                             shortDescription: "Artigos temáticos à venda",
                             detail: "",
                             fullDescription: "Estandes com Artigos temáticos de diversos tipos à venda!",
-                            about: "Venha Conferir")
+                            about: "O Maior número de estandes em eventos do Sul do Brasil. Venha Conferir")
         
         let three = InfoModel(title: "De Volta Para o Futuro",
                               time: "12:30",
@@ -93,7 +93,7 @@ class ViewController : UIViewController {
                               shortDescription: "Exposição",
                               detail: "",
                               fullDescription: "Exposição do filme De Volta Para o Futuro",
-                              about: "Venha Conferir")
+                              about: "Quem passar por lá poderá ficar bem perto do DeLorean, o super carro que acompanhou Marty McFly (Michael J. Fox) e Doc Brown (Christopher Lloyd). Já o sósia de McFly também vai estar no local em ambos os dias para fotos com o público.")
         
         let four = InfoModel(title: "Harry Potter",
                              time: "12:50",
@@ -104,7 +104,7 @@ class ViewController : UIViewController {
                              shortDescription: "Sala temática",
                              detail: "",
                              fullDescription: "Sala temática de Harry Potter",
-                             about: "Venha conferir")
+                             about: "Sala temática com exposição especial sobre a literatura de Harry Potter no Brasil e no mundo. \n Viva a magia nessa imersão e sinta-se na Biblioteca de Hogwarts!")
         
         let five = InfoModel(title: "Ragnarok",
                              time: "14:00",
@@ -115,7 +115,7 @@ class ViewController : UIViewController {
                              shortDescription: "Sala temática",
                              detail: "",
                              fullDescription: "Sala temática do jogo Ragnarok",
-                             about: "Venha conferir")
+                             about: "Ragnarök Online é um MMORPG desenvolvido pela empresa sul-coreana Gravity Corp. Ragnarök Online foi o primeiro jogo online coreano a ser exportado com sucesso a outros países.")
         
         let six = InfoModel(title: "Isaac Bardavid",
                              time: "14:20",
@@ -126,7 +126,7 @@ class ViewController : UIViewController {
                              shortDescription: "Dublador do Wolverine",
                              detail: "A vida de um dublador no Brasil",
                              fullDescription: "Isaac Bardavid é um ator, dublador e poeta brasileiro. Como dublador, é conhecido pelas vozes do Wolverine, o Esqueleto de He-Man, Tigrão, o amigo do Ursinho Pooh, Robotnik de Sonic The Hedgehog SatAM e o computador K.I.T.T. do seriado A Super Máquina.",
-                             about: "Isaac vai nos contar sobre sua vida como dublador no Brasil, lembrando dos melhores momentos e das maiores dificuldades. Também vamos ouvir sobre como foi dublar Wolverine pro tantos anos! Duração: 1h")
+                             about: "Isaac vai nos contar sobre sua vida como dublador no Brasil, lembrando dos melhores momentos e das maiores dificuldades. Também vamos ouvir sobre como foi dublar Wolverine pro tantos anos! \n Duração: 1h")
         
         let seven = InfoModel(title: "Rolandinho e Bock",
                              time: "15:00",
@@ -137,7 +137,7 @@ class ViewController : UIViewController {
                              shortDescription: "Pipocando",
                              detail: "Como chegamos até aqui",
                              fullDescription: "Conversa com Rolandinho e Bock: Como chegamos até aqui!",
-                             about: "Venha conferir")
+                             about: "Rolandinho e Bruno Bock compartilham, por meio do relato de suas histórias, os tropeços e acertos que levaram o Pipocando a alcançar marcas incríveis – 140 milhões de visualizações e mais de 1,7 milhão de inscritos.")
         
         let eight = InfoModel(title: "Campeonato de Guitar Hero",
                               time: "15:10",
