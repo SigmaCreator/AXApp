@@ -84,7 +84,7 @@ class ViewController : UIViewController {
                             detail: "",
                             fullDescription: "Estandes com Artigos temáticos de diversos tipos à venda!",
                             about: "O Maior número de estandes em eventos do Sul do Brasil. Venha Conferir",
-                            bigImage: "sailorBig")
+                            bigImage: "estandesBig")
         
         let three = InfoModel(title: "De Volta Para o Futuro",
                               time: "12:30",
@@ -96,7 +96,7 @@ class ViewController : UIViewController {
                               detail: "",
                               fullDescription: "Exposição do filme De Volta Para o Futuro",
                               about: "Quem passar por lá poderá ficar bem perto do DeLorean, o super carro que acompanhou Marty McFly (Michael J. Fox) e Doc Brown (Christopher Lloyd). Já o sósia de McFly também vai estar no local em ambos os dias para fotos com o público.",
-                              bigImage: "sailorBig")
+                              bigImage: "deVoltaParaBig")
         
         let four = InfoModel(title: "Harry Potter",
                              time: "12:50",
@@ -108,7 +108,7 @@ class ViewController : UIViewController {
                              detail: "",
                              fullDescription: "Sala temática de Harry Potter",
                              about: "Sala temática com exposição especial sobre a literatura de Harry Potter no Brasil e no mundo. \n Viva a magia nessa imersão e sinta-se na Biblioteca de Hogwarts!",
-                             bigImage: "sailorBig")
+                             bigImage: "harryBig")
         
         let five = InfoModel(title: "Ragnarok",
                              time: "14:00",
@@ -120,7 +120,7 @@ class ViewController : UIViewController {
                              detail: "",
                              fullDescription: "Sala temática do jogo Ragnarok",
                              about: "Ragnarök Online é um MMORPG desenvolvido pela empresa sul-coreana Gravity Corp. Ragnarök Online foi o primeiro jogo online coreano a ser exportado com sucesso a outros países.",
-                             bigImage: "sailorBig")
+                             bigImage: "ragnarokBig")
         
         let six = InfoModel(title: "Isaac Bardavid",
                              time: "14:20",
@@ -132,7 +132,7 @@ class ViewController : UIViewController {
                              detail: "A vida de um dublador no Brasil",
                              fullDescription: "Isaac Bardavid é um ator, dublador e poeta brasileiro. Como dublador, é conhecido pelas vozes do Wolverine, o Esqueleto de He-Man, Tigrão, o amigo do Ursinho Pooh, Robotnik de Sonic The Hedgehog SatAM e o computador K.I.T.T. do seriado A Super Máquina.",
                              about: "Isaac vai nos contar sobre sua vida como dublador no Brasil, lembrando dos melhores momentos e das maiores dificuldades. Também vamos ouvir sobre como foi dublar Wolverine pro tantos anos! \n Duração: 1h",
-                             bigImage: "sailorBig")
+                             bigImage: "isaacBig")
         
         let seven = InfoModel(title: "Rolandinho e Bock",
                              time: "15:00",
@@ -144,7 +144,7 @@ class ViewController : UIViewController {
                              detail: "Como chegamos até aqui",
                              fullDescription: "Conversa com Rolandinho e Bock: Como chegamos até aqui!",
                              about: "Rolandinho e Bruno Bock compartilham, por meio do relato de suas histórias, os tropeços e acertos que levaram o Pipocando a alcançar marcas incríveis – 140 milhões de visualizações e mais de 1,7 milhão de inscritos.",
-                             bigImage: "sailorBig")
+                             bigImage: "rolandinhoBig")
         
         let eight = InfoModel(title: "Campeonato de Guitar Hero",
                               time: "15:10",
@@ -168,7 +168,7 @@ class ViewController : UIViewController {
                               detail: "O humor na internet",
                               fullDescription: "Conversa com Cid do Não Salvo, O humor na internet!",
                               about: "Venha conferir",
-                              bigImage: "sailorBig")
+                              bigImage: "cidBig")
         
         let ten = InfoModel(title: "Sessão de fotos",
                              time: "16:40",
@@ -180,7 +180,7 @@ class ViewController : UIViewController {
                              detail: "O humor na internet",
                              fullDescription: "Sessāo de fotos com Cid do Não Salvo.",
                              about: "Venha conferir",
-                             bigImage: "sailorBig")
+                             bigImage: "cidBig")
         
         infos.append(one)
         infos.append(two)
