@@ -224,6 +224,7 @@
                                             <outlet property="infoImage" destination="ErY-Br-f9h" id="LrI-RE-h12"/>
                                             <outlet property="location" destination="cgN-ky-YEa" id="iKR-qz-769"/>
                                             <outlet property="secondColorTagView" destination="yWB-ND-GJQ" id="SaA-ZX-XXq"/>
+                                            <outlet property="shadowView" destination="xwL-53-SUS" id="avj-fQ-PZQ"/>
                                             <outlet property="shortDescription" destination="DRQ-nl-KSD" id="dmA-u1-J4g"/>
                                             <outlet property="time" destination="rvh-9m-9Ej" id="gWU-zQ-wdE"/>
                                             <outlet property="title" destination="d8X-Tp-PMZ" id="9Pt-tl-1cj"/>

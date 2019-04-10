@@ -19,6 +19,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var time: UILabel!
     @IBOutlet weak var location: UILabel!
     @IBOutlet weak var secondColorTagView: UIView!
+    @IBOutlet weak var shadowView: UIView!
     
     var infoModel : InfoModel! {
         
@@ -32,6 +33,10 @@ class TableViewCell: UITableViewCell {
             self.infoImage.image = UIImage(named: infoModel.imageName)
             
             maskLayerWith(inputView: secondColorTagView)
+            
+            shadowView.layer.shadowColor = UIColor.black.cgColor
+            shadowView.layer.shadowOffset = CGSize(width: 0, height: 1.0)
+            shadowView.layer.shadowOpacity = 0.5
             
 //            if infoModel.isFavorite {
 //                
