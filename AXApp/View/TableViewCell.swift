@@ -35,8 +35,8 @@ class TableViewCell: UITableViewCell {
             maskLayerWith(inputView: secondColorTagView)
             
             shadowView.layer.shadowColor = UIColor.black.cgColor
-            shadowView.layer.shadowOffset = CGSize(width: 0, height: 1.0)
-            shadowView.layer.shadowOpacity = 0.5
+            shadowView.layer.shadowOffset = CGSize(width: 0, height: 4)
+            shadowView.layer.shadowOpacity = 0.3
             
 //            if infoModel.isFavorite {
 //                
