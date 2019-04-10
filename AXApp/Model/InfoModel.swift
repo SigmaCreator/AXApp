@@ -34,5 +34,6 @@ struct InfoModel {
     //MARK: - Info Page
     var fullDescription: String
     var about: String
+    var bigImage: String
     
 }
