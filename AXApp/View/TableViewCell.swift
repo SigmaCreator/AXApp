@@ -20,7 +20,9 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var location: UILabel!
     
     var infoModel : InfoModel! {
+        
         didSet{
+            
             self.title.text = infoModel.title
             self.shortDescription.text = infoModel.shortDescription
             self.detail.text = infoModel.detail

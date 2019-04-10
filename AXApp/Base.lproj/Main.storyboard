@@ -59,12 +59,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapIcon" translatesAutoresizingMaskIntoConstraints="NO" id="kff-YH-mge">
-                                <rect key="frame" x="136" y="408" width="142" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapIcon" translatesAutoresizingMaskIntoConstraints="NO" id="kff-YH-mge">
+                                <rect key="frame" x="136" y="407.5" width="142" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="hWK-Ts-ePP"/>
+                                    <constraint firstAttribute="width" constant="142" id="n5e-Ra-seO"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kff-YH-mge" firstAttribute="centerY" secondItem="Dml-xD-Ftr" secondAttribute="centerY" id="0lJ-6M-a4k"/>
+                            <constraint firstItem="kff-YH-mge" firstAttribute="centerX" secondItem="Dml-xD-Ftr" secondAttribute="centerX" id="zOF-3P-Xf4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jRf-bq-3fH"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="mapIcon" id="OdJ-2b-aCP">
@@ -215,15 +222,18 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brt-YO-ptv">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="155"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gkT-hq-Tl7">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gkT-hq-Tl7">
                                         <rect key="frame" x="119" y="56" width="177" height="91"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="IUV-Ac-C9M"/>
+                                    <constraint firstAttribute="trailing" secondItem="gkT-hq-Tl7" secondAttribute="trailing" constant="118" id="M2K-GB-SLH"/>
+                                    <constraint firstItem="gkT-hq-Tl7" firstAttribute="top" secondItem="brt-YO-ptv" secondAttribute="top" constant="56" id="UqD-PB-k7P"/>
+                                    <constraint firstItem="gkT-hq-Tl7" firstAttribute="leading" secondItem="brt-YO-ptv" secondAttribute="leading" constant="119" id="fh8-ue-euA"/>
                                     <constraint firstAttribute="height" constant="155" id="iMz-ao-4cW"/>
+                                    <constraint firstAttribute="bottom" secondItem="gkT-hq-Tl7" secondAttribute="bottom" constant="8" id="jE8-SE-GeG"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1et-ZF-6MC">
@@ -242,28 +252,34 @@
                                     <constraint firstItem="TwU-1c-1Te" firstAttribute="leading" secondItem="1et-ZF-6MC" secondAttribute="leading" id="tf1-9u-rbk"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launchScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="o2W-hE-Uqz">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="o2W-hE-Uqz">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="EFT-jI-LWZ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreenLogo" translatesAutoresizingMaskIntoConstraints="NO" id="EFT-jI-LWZ">
                                 <rect key="frame" x="87" y="384" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="1et-ZF-6MC" firstAttribute="trailing" secondItem="YfE-xq-gYH" secondAttribute="trailing" id="0d8-1e-Kc6"/>
+                            <constraint firstItem="YfE-xq-gYH" firstAttribute="bottom" secondItem="EFT-jI-LWZ" secondAttribute="bottom" constant="301" id="2J6-d7-Zro"/>
+                            <constraint firstItem="EFT-jI-LWZ" firstAttribute="top" secondItem="1et-ZF-6MC" secondAttribute="bottom" constant="29" id="BXc-Wh-tPx"/>
                             <constraint firstItem="1et-ZF-6MC" firstAttribute="top" secondItem="brt-YO-ptv" secondAttribute="bottom" id="C8N-2T-Nw7"/>
+                            <constraint firstItem="EFT-jI-LWZ" firstAttribute="leading" secondItem="YfE-xq-gYH" secondAttribute="leading" constant="87" id="Cxq-6p-DTv"/>
                             <constraint firstItem="Hyd-Av-ppU" firstAttribute="trailing" secondItem="YfE-xq-gYH" secondAttribute="trailing" id="ELp-cB-8tA"/>
+                            <constraint firstItem="o2W-hE-Uqz" firstAttribute="top" secondItem="GOJ-pO-kaY" secondAttribute="top" id="GaQ-b9-KsP"/>
                             <constraint firstItem="brt-YO-ptv" firstAttribute="trailing" secondItem="YfE-xq-gYH" secondAttribute="trailing" id="H2V-Oq-sRh"/>
                             <constraint firstItem="Hyd-Av-ppU" firstAttribute="leading" secondItem="YfE-xq-gYH" secondAttribute="leading" id="JgE-SI-5AN"/>
                             <constraint firstItem="1et-ZF-6MC" firstAttribute="leading" secondItem="YfE-xq-gYH" secondAttribute="leading" id="KMI-yx-jKS"/>
                             <constraint firstItem="Hyd-Av-ppU" firstAttribute="bottom" secondItem="YfE-xq-gYH" secondAttribute="bottom" id="U3c-ph-zrJ"/>
                             <constraint firstItem="Hyd-Av-ppU" firstAttribute="top" secondItem="1et-ZF-6MC" secondAttribute="bottom" id="Vun-Le-Awa"/>
                             <constraint firstItem="brt-YO-ptv" firstAttribute="top" secondItem="GOJ-pO-kaY" secondAttribute="top" id="Z1Y-2G-ccK"/>
+                            <constraint firstAttribute="bottom" secondItem="o2W-hE-Uqz" secondAttribute="bottom" id="cvP-mI-hka"/>
+                            <constraint firstItem="o2W-hE-Uqz" firstAttribute="leading" secondItem="YfE-xq-gYH" secondAttribute="leading" id="eLj-zv-FJG"/>
                             <constraint firstItem="Hyd-Av-ppU" firstAttribute="top" secondItem="1et-ZF-6MC" secondAttribute="bottom" id="gqS-E0-cSR"/>
+                            <constraint firstItem="o2W-hE-Uqz" firstAttribute="trailing" secondItem="YfE-xq-gYH" secondAttribute="trailing" id="hPR-1U-rjK"/>
                             <constraint firstItem="brt-YO-ptv" firstAttribute="leading" secondItem="YfE-xq-gYH" secondAttribute="leading" id="p1D-96-iij"/>
+                            <constraint firstItem="YfE-xq-gYH" firstAttribute="trailing" secondItem="EFT-jI-LWZ" secondAttribute="trailing" constant="87" id="qyr-Qe-d0z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YfE-xq-gYH"/>
                     </view>
@@ -432,12 +448,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="bc0-aw-Lhu">
-                                <rect key="frame" x="136" y="408" width="142" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="bc0-aw-Lhu">
+                                <rect key="frame" x="136" y="407.5" width="142" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="0za-TG-X3a"/>
+                                    <constraint firstAttribute="width" constant="142" id="ZDv-FY-2po"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bc0-aw-Lhu" firstAttribute="centerX" secondItem="VyD-1R-WNt" secondAttribute="centerX" id="4Xs-kF-2RA"/>
+                            <constraint firstItem="bc0-aw-Lhu" firstAttribute="centerY" secondItem="VyD-1R-WNt" secondAttribute="centerY" id="JGp-Zj-Hdx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UL8-WC-PGD"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="newsIcon" id="91S-pA-yKQ">
@@ -456,12 +479,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heartIcon" translatesAutoresizingMaskIntoConstraints="NO" id="zYj-2Z-cIT">
-                                <rect key="frame" x="136" y="408" width="142" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heartIcon" translatesAutoresizingMaskIntoConstraints="NO" id="zYj-2Z-cIT">
+                                <rect key="frame" x="136" y="407.5" width="142" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="Og1-px-zv8"/>
+                                    <constraint firstAttribute="height" constant="81" id="mJQ-pS-IDb"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zYj-2Z-cIT" firstAttribute="centerY" secondItem="l2Z-sI-rGu" secondAttribute="centerY" id="gBq-tw-lNd"/>
+                            <constraint firstItem="zYj-2Z-cIT" firstAttribute="centerX" secondItem="l2Z-sI-rGu" secondAttribute="centerX" id="hOP-tc-blU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MN5-lm-hQr"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="heartIcon" id="Xn4-l1-vsg">
@@ -480,12 +510,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="I5h-5t-Zqe">
-                                <rect key="frame" x="136" y="408" width="142" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="I5h-5t-Zqe">
+                                <rect key="frame" x="136" y="407.5" width="142" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="0g7-nA-gTV"/>
+                                    <constraint firstAttribute="height" constant="81" id="I8K-9a-CN1"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="I5h-5t-Zqe" firstAttribute="centerX" secondItem="x4W-nt-h4n" secondAttribute="centerX" id="1lY-iX-9zo"/>
+                            <constraint firstItem="I5h-5t-Zqe" firstAttribute="centerY" secondItem="x4W-nt-h4n" secondAttribute="centerY" id="iFT-OV-Z1n"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="c4A-eu-0Ls"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="profileIcon" id="KFv-0T-lzd">
@@ -502,7 +539,7 @@
         <image name="heartIcon" width="24" height="22"/>
         <image name="homeIcon" width="29" height="24"/>
         <image name="launchScreenBG" width="125" height="270.66665649414062"/>
-        <image name="logo" width="454" height="178.5"/>
+        <image name="launchScreenLogo" width="98.666664123535156" height="45.666667938232422"/>
         <image name="mapIcon" width="25" height="25"/>
         <image name="naoImplementado" width="187.5" height="100.5"/>
         <image name="newsIcon" width="24.5" height="24.5"/>
