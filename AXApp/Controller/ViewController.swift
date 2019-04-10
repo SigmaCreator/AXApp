@@ -257,6 +257,8 @@ extension ViewController : UITableViewDataSource {
             
             cell.colorTagView.backgroundColor = categoryColor[category]
             
+            cell.secondColorTagView.backgroundColor = categoryColor[category]
+            
             return cell
             
         }

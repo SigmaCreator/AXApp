@@ -18,6 +18,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var detail: UILabel!
     @IBOutlet weak var time: UILabel!
     @IBOutlet weak var location: UILabel!
+    @IBOutlet weak var secondColorTagView: UIView!
     
     var infoModel : InfoModel! {
         
@@ -30,6 +31,8 @@ class TableViewCell: UITableViewCell {
             self.location.text = infoModel.location
             self.infoImage.image = UIImage(named: infoModel.imageName)
             
+            maskLayerWith(inputView: secondColorTagView)
+            
 //            if infoModel.isFavorite {
 //                
 //                self.favoriteButton.setImage(UIImage(named: "filledHeart"), for: .normal)
@@ -41,6 +44,23 @@ class TableViewCell: UITableViewCell {
 //            }
         
         }
+    }
+    
+    func maskLayerWith(inputView:UIView) {
+        let finalPath = UIBezierPath(rect: inputView.bounds)
+        let maskLayer = CAShapeLayer()
+        maskLayer.frame = inputView.bounds
+        
+        let cutPath = UIBezierPath()
+        cutPath.move(to: CGPoint(x: 0, y: inputView.frame.maxY))
+        cutPath.addLine(to: CGPoint(x: 15, y: 0))
+        cutPath.addLine(to: CGPoint(x: 0, y: 0))
+        cutPath.close()
+        
+        finalPath.append(cutPath)
+        maskLayer.fillRule = CAShapeLayerFillRule.evenOdd
+        maskLayer.path = finalPath.cgPath
+        inputView.layer.mask = maskLayer
     }
     
 }
