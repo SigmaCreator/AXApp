@@ -49,13 +49,12 @@ class DetailViewController: UIViewController {
 
         self.detailTitle.text = info?.title
         self.fullDescription.text = info?.fullDescription
-        self.infoImage.image = UIImage(named: info?.imageName ?? "")
+        self.infoImage.image = UIImage(named: info?.bigImage ?? "")
         self.about.text = info?.about
         self.time.text = info?.time
         self.detailLabel.text = info?.detail
         self.location.text = info?.location
         let category = info!.category.rawValue
-        
         self.firstView.backgroundColor = categoryColor[category]
         self.secondView.backgroundColor =
             categoryColor[category]
