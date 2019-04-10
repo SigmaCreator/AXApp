@@ -155,8 +155,7 @@ class ViewController : UIViewController {
                               shortDescription: "",
                               detail: "Inscrições 30min antes",
                               fullDescription: "Inscrições 30min antes",
-                              about: "O AX promove um campeonato de Guitar Hero: World Tour, jogo de videogame em que você incorpora um roqueiro rumo ao estrelato. Na edição mais recente da famosa série de jogos, a inovação fica por conta do microfone e o controle em forma de bateria.")
-                              about: "Venha conferir",
+                              about: "O AX promove um campeonato de Guitar Hero: World Tour, jogo de videogame em que você incorpora um roqueiro rumo ao estrelato. Na edição mais recente da famosa série de jogos, a inovação fica por conta do microfone e o controle em forma de bateria.",
                               bigImage: "sailorBig")
         
         let nine = InfoModel(title: "Cid",
